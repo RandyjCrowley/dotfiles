@@ -1,0 +1,9 @@
+*
+
+!.config
+!.config/nvim
+!.config/nvim/*
+!.config/kitty
+!.config/kitty/*
+
+!.gitignore
