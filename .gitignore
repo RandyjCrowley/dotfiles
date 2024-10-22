@@ -3,4 +3,6 @@
 !.config
 !.config/nvim/
 !.config/nvim/**
-
+!.zshrc
+!.oh-my-zsh/
+!.oh-my-zsh/**
