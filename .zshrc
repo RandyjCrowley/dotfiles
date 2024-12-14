@@ -102,3 +102,8 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+
+export PATH="$PATH:/Users/rcrowley/.composer/vendor/bin"
+export PATH="/opt/homebrew/opt/node@22/bin:$PATH"
+alias ssh="kitten ssh"
+
