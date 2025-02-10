@@ -107,7 +107,22 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-
+export PATH="$PATH:/Users/rcrowley/Binaires/zig"
 export PATH="$PATH:/Users/rcrowley/.composer/vendor/bin"
 export PATH="/opt/homebrew/opt/node@22/bin:$PATH"
 export TERM=xterm-256color
+
+
+# Herd injected NVM configuration
+export NVM_DIR="/Users/rcrowley/Library/Application Support/Herd/config/nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+
+[[ -f "/Applications/Herd.app/Contents/Resources/config/shell/zshrc.zsh" ]] && builtin source "/Applications/Herd.app/Contents/Resources/config/shell/zshrc.zsh"
+
+# Herd injected PHP binary.
+export PATH="/Users/rcrowley/Library/Application Support/Herd/bin/":$PATH
+
+
+# Herd injected PHP 8.3 configuration.
+export HERD_PHP_83_INI_SCAN_DIR="/Users/rcrowley/Library/Application Support/Herd/config/php/83/"
+export PATH="/opt/homebrew/opt/node@18/bin:$PATH"

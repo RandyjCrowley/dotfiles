@@ -65,3 +65,18 @@ vim.opt.scrolloff = 10
 vim.g.netrw_banner = 0
 
 -- vim: ts=2 sts=2 sw=2 et
+--
+vim.api.nvim_create_autocmd('FileType', {
+  pattern = { 'php', 'blade' },
+  callback = function()
+    vim.lsp.start {
+      name = 'laravel-ls',
+      cmd = { '/Users/rcrowley/Binaires/laravel-ls/build/laravel-ls' },
+      -- if you want to recompile everytime
+      -- the language server is started.
+      -- Uncomment this line instead
+      -- cmd = { '/path/to/laravel-ls/start.sh' },
+      root_dir = vim.fn.getcwd(),
+    }
+  end,
+})
