@@ -7,7 +7,7 @@
 vim.opt.number = true
 -- You can also add relative line numbers, to help with jumping.
 --  Experiment for yourself to see if you like it!
-vim.opt.relativenumber = true
+-- vim.opt.relativenumber = true
 
 -- Enable mouse mode, can be useful for resizing splits for example!
 vim.opt.mouse = 'a'
@@ -40,7 +40,6 @@ vim.opt.signcolumn = 'yes'
 vim.opt.updatetime = 250
 
 -- Decrease mapped sequence wait time
--- Displays which-key popup sooner
 vim.opt.timeoutlen = 300
 
 -- Configure how new splits should be opened
@@ -62,21 +61,9 @@ vim.opt.cursorline = true
 -- Minimal number of screen lines to keep above and below the cursor.
 vim.opt.scrolloff = 10
 
-vim.g.netrw_banner = 0
+-- if performing an operation that would fail due to unsaved changes in the buffer (like `:q`),
+-- instead raise a dialog asking if you wish to save the current file(s)
+-- See `:help 'confirm'`
+vim.opt.confirm = true
 
 -- vim: ts=2 sts=2 sw=2 et
---
-vim.api.nvim_create_autocmd('FileType', {
-  pattern = { 'php', 'blade' },
-  callback = function()
-    vim.lsp.start {
-      name = 'laravel-ls',
-      cmd = { '/Users/rcrowley/Binaires/laravel-ls/build/laravel-ls' },
-      -- if you want to recompile everytime
-      -- the language server is started.
-      -- Uncomment this line instead
-      -- cmd = { '/path/to/laravel-ls/start.sh' },
-      root_dir = vim.fn.getcwd(),
-    }
-  end,
-})

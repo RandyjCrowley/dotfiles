@@ -3,6 +3,6 @@
 !.config
 !.config/nvim/
 !.config/nvim/**
-!.config/kitty/
-!.config/kitty/**
+!.config/wezterm/
+!.config/wezterm/**
 !.zshrc
