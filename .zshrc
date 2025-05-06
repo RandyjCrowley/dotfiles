@@ -115,7 +115,7 @@ export TERM=xterm-256color
 # Herd injected PHP binary.
 export PATH="/Users/rcrowley/Library/Application Support/Herd/bin/":$PATH
 
-export XDG_CONFIG_HOME="~/.config"
+export XDG_CONFIG_HOME="${HOME}/.config"
 
 export WEZTERM_CONFIG_FILE="${XDG_CONFIG_HOME}/wezterm/wezterm.lua"
 
