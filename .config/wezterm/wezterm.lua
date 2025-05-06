@@ -10,10 +10,13 @@ config.font = wezterm.font("Iosevka Term")
 
 config.font_size = 21
 
+config.set_environment_variables = {
+	PATH = "/opt/homebrew/bin:" .. os.getenv("PATH"),
+}
+
 -- KEYS
 
 config.keys = {
-
 	{
 		key = "w",
 		mods = "SUPER",
@@ -36,6 +39,16 @@ config.keys = {
 		key = "n",
 		mods = "SUPER",
 		action = wezterm.action.SpawnCommandInNewTab({ args = { "/opt/homebrew/bin/nvim", "." } }),
+	},
+	{
+		key = "]",
+		mods = "SUPER",
+		action = wezterm.action.RotatePanes("Clockwise"),
+	},
+	{
+		key = "[",
+		mods = "SUPER",
+		action = wezterm.action.RotatePanes("CounterClockwise"),
 	},
 }
 
