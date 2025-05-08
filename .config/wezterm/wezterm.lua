@@ -50,6 +50,11 @@ config.keys = {
 		mods = "SUPER",
 		action = wezterm.action.RotatePanes("CounterClockwise"),
 	},
+	{
+		key = "p",
+		mods = "SUPER",
+		action = wezterm.action.ActivateCommandPalette,
+	},
 }
 
 return config
