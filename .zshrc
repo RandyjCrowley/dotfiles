@@ -105,10 +105,11 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-
+export GOPATH=$HOME/go
 export PATH="$PATH:/Users/rcrowley/Binaires/zig"
 export PATH="$PATH:/Users/rcrowley/.composer/vendor/bin"
 export PATH="/opt/homebrew/opt/node@22/bin:$PATH"
+export PATH=$PATH:$(go env GOPATH)/bin
 export TERM=xterm-256color
 
 
