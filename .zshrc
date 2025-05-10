@@ -104,21 +104,9 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+#source $(brew --prefix)/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 
-export GOPATH=$HOME/go
-export PATH="$PATH:/Users/rcrowley/Binaires/zig"
+export GOPATH=$(brew --prefix)/go
 export PATH="$PATH:/Users/rcrowley/.composer/vendor/bin"
-export PATH="/opt/homebrew/opt/node@22/bin:$PATH"
-export PATH=$PATH:$(go env GOPATH)/bin
 export TERM=xterm-256color
-
-
-# Herd injected PHP binary.
-export PATH="/Users/rcrowley/Library/Application Support/Herd/bin/":$PATH
-
-export XDG_CONFIG_HOME="${HOME}/.config"
-
-export WEZTERM_CONFIG_FILE="${XDG_CONFIG_HOME}/wezterm/wezterm.lua"
-
-export PATH="$PATH:/opt/homebrew/bin/nvim"
-
+export XDG_CONFIG_HOME=$HOME/.config
