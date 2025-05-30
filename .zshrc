@@ -106,7 +106,14 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 #source $(brew --prefix)/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 
+alias vim="nvim"
+alias :q="exit"
+
 export GOPATH=$(brew --prefix)/go
 export PATH="$PATH:/Users/rcrowley/.composer/vendor/bin"
 export TERM=xterm-256color
 export XDG_CONFIG_HOME=$HOME/.config
+
+export PYENV_ROOT="$HOME/.pyenv"
+[[ -d $PYENV_ROOT/bin ]] && export PATH="$PYENV_ROOT/bin:$PATH"
+eval "$(pyenv init - zsh)"

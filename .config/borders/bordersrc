@@ -1,0 +1,13 @@
+#!/bin/bash
+
+options=(
+	style=round
+	width=4.0
+	hidpi=on
+	active_color=0xff528bff       # Deeper One Dark blue (focused)
+	inactive_color=0xff2c313c     # Very dark gray-blue (unfocused)
+	background_color=0xff21252b   # Even darker base from One Dark
+)
+
+borders "${options[@]}"
+

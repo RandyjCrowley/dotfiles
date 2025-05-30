@@ -1,6 +1,12 @@
 *
 !.gitignore
 !.config
+!.config/sketchybar/
+!.config/sketchybar/**
+!.config/borders/
+!.config/borders/**
+!.config/aerospace/
+!.config/aerospace/**
 !.config/nvim/
 !.config/nvim/**
 !.config/ghostty/
