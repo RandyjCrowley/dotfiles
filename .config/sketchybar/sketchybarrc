@@ -23,8 +23,7 @@ sketchybar --default label.padding_left=6 \
 
 ############## GLOBAL DEFAULTS ##############
 sketchybar --default updates=when_shown \
-                     icon.font="IosevkaTerm Nerd Font Propo:Bold:16.0" \  # Changed to Hack Nerd Font
-                     icon.color=0xffECEFF4 \
+                     icon.font="IosevkaTerm Nerd Font Propo:Bold:16.0" \
                      icon.highlight_color=0xffE48FA8 \
                      label.font="IosevkaTerm Nerd Font Propo:Bold:16.0" \
                      label.color=0xffECEFF4 \
