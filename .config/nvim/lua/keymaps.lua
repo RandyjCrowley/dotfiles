@@ -10,7 +10,7 @@ vim.keymap.set('n', '<leader>q', vim.diagnostic.setloclist, { desc = 'Open diagn
 
 vim.keymap.set('n', '<leader>pv', vim.cmd.Ex, { desc = 'Open [P]roject [V]iew' })
 
-vim.opt.mouse = 'n' -- Enable mouse in Normal mode (includes scrolling)
+-- vim.opt.mouse = 'n' -- Enable mouse in Normal mode (includes scrolling)
 
 -- Disable mouse clicks for selection or cursor movement
 vim.keymap.set('n', '<LeftMouse>', '<Nop>', { noremap = true, silent = true })
